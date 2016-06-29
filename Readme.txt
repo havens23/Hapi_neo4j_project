@@ -1,4 +1,4 @@
-* Howto deploy node-neo4j-peopleroad project
+* Howto deploy hapi_neo4j_project project
 1. github checkout : https://github.com/havens23/Hapi_neo4j_project.git
 2. cd hapi_neo4j_peopleroad/
 3. installing hapi
