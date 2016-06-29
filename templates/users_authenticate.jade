@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+    body
+        form(action='/users/authenticate' method='post')
+            p
+                input(type='hidden' name='uid' value= uid)
+            p
+                label(for='acode') 인증번호 :
+                    input(id='acode' type='text' name='authcode' value= authcode)
+            p 비밀번호 :
+                input(type='password' name='password')
+            p 국가코드 :
+                input(type='text' name='countrycode' value='81')
+            p 전화번호 :
+                input(type='text' name='mobile' value= mobile)
+            p 약관동의 :
+                input(type='text' name='select_of_use' value='true')
+            p sms 수신 동의 :
+                input(type='text' name='sms' value='true')
+            p
+                input(type='submit')

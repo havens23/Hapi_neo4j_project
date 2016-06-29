@@ -1,0 +1,26 @@
+{
+  "name": "webstorm",
+  "version": "1.0.0",
+  "description": "* Howto deploy node-neo4j-peopleroad project 1. svn checkout https://walrus.svn.beanstalkapp.com/node-neo4j-peopleroad/ 2. cd node-neo4j-peopleroad/ 3. installing hapi \t$npm init \t$npm install --save hapi 4. installing official bolt driver \t$npm install neo4j-driver@1.0.0",
+  "main": "peopleroad.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Song SW",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^13.4.1",
+    "hapi-router": "^3.5.0",
+    "inert": "^4.0.0",
+    "jade": "^1.11.0",
+    "jade-bootstrap": "^1.0.4",
+    "multiparty": "^4.1.2",
+    "neo4j-driver": "^1.0.1",
+    "path": "^0.12.7",
+    "request": "^2.72.0",
+    "supervisor": "^0.10.0",
+    "uuid": "^2.0.2",
+    "vision": "^4.1.0"
+  },
+  "devDependencies": {}
+}

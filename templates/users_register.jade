@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+    body
+        form(action='/users/register' method='post')
+            p uid :
+                input(type='text' name='uid' value=uid)
+            p 사용자 이름 :
+                input(type='text' name='name')
+            p 프로필 사진 :
+                input(type='file' name='image_url')
+            p
+                input(type='submit')

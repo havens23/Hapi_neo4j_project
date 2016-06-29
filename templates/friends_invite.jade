@@ -1,0 +1,12 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+    body
+        form(action='/friends/invite' method='post')
+            p uid :
+                input(type='text' name='uid')
+            p 친구 연락처 :
+                input(type='text' name='mobile')
+            p
+                input(type='submit')
