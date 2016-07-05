@@ -18,37 +18,36 @@ const server = new Hapi.Server({
 });
 
 server.connection({
-    host: '192.168.0.11',
+    //host: '192.168.0.11',
     port: 3000
 });
 
-//job scheduleling test
-
+/////////////////////job scheduleling test////////////////////////
+/*
 var rule1 = new schedule.RecurrenceRule();
 
-rule1.minute = 51;
-
+rule1.minute = 30;
 var scheduledJob2 = schedule.scheduleJob(rule1,
     function(){
 
         console.log('[2] 서버 정상 작동 중!!');
 
         var formData = {
-            body: '[[PizzaHouse]](http://url_to_text) You have a new Pizza order.', //Body text (Required)
+            body: '[[Webhook-Jandi connection 테스트!]]', //Body text (Required)
             connectColor: '#FAC11B', //Hex code color of attachment bar
             connectInfo: [{
-                title: 'Topping', //1st attachment area title
-                description: 'Pepperoni' //1st attachment description
+                title: 'New User', //1st attachment area title
+                description: 'havens98' //1st attachment description
             },
                 {
-                    title: 'Location', //2nd attachment area title
-                    description: 'Empire State Building, 5th Ave, New York', //2nd attachment description
-                    imageUrl: 'http://url_to_text' //Image URL
+                    title: 'Job Scheduling', //2nd attachment area title
+                    description: '1시간에 한번 씩 새로 가입한 유저를 DB에서 자동으로 검색하여 잔디로 뉴 유저 목록을 보내는 테스트임' +
+                    '로컬에서 테스트 결과, 메세지 전송 Success! 애스키모 DB와 연동하고, 서버에 deploy 하면 끝.', //2nd attachment description
                 }]
         }
 
         var options = {
-            url: 'https://wh.jandi.com/connect-api/webhook/12210821/1b7cb6ccb9975f860c744166c3557990',
+            url: 'https://wh.jandi.com/connect-api/webhook/11529224/c1677a924caae6a02b687d303ca01238',
             headers: {
                 "Content-type": "application/json",
                 "Accept": "application/vnd.tosslab.jandi-v2+json"
@@ -68,6 +67,7 @@ var scheduledJob2 = schedule.scheduleJob(rule1,
         });
     }
 );
+*/
 
 //Route configuration
 server.register({
